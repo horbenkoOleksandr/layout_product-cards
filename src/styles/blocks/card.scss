@@ -26,12 +26,14 @@
 
   &__title-link {
     @include text(12px, 18px, 500);
+
     text-decoration: none;
     color: $color-black;
   }
 
   &__product-code {
     @include text(10px, 14px);
+
     margin: 0;
     margin-bottom: 16px;
     color: $color-gray;
@@ -43,27 +45,9 @@
     margin-bottom: 24px;
   }
 
-  &__stars {
-    display: flex;
-
-    &--4 .card__star:nth-child(-n + 4) {
-      background-image: url(../images/star-active.svg);
-    }
-  }
-
-  &__star {
-    background-image: url(../images/star.svg);
-    background-size: contain;
-    width: 16px;
-    height: 16px;
-
-    &:not(:last-child) {
-      margin-right: 4px;
-    }
-  }
-
   &__reviews {
     @include text(10px, 14px);
+
     color: $color-dark;
   }
 
@@ -75,17 +59,20 @@
 
   &__price-label {
     @include text(12px, 18px);
+
     color: $color-gray;
   }
 
   &__price-value {
     @include text(16px, 18px, 700);
+
     color: $color-dark;
   }
 
   &__button {
     @include flex-center;
     @include text(14px, 16px, 700);
+
     width: 100%;
     height: 40px;
     border-radius: 5px;
